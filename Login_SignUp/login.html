@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STLA World - Log In</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="topnav">
+      <div class="MainPages">
+        <img src="../images/miniLogo.png" height="45" width="120" class="miniSTLALogo" />
+        <a href="../index.html">Home</a>
+        <a href="../events.html">Events</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../Offers.html">Offers</a>
+      </div>
+
+      <div class="signup-login">
+        <a class="active" href="../Login_SignUp/login.html">Log In</a>
+        <a href="../Login_SignUp/signup.html">Sign Up</a>
+        <a href="../show_users.php">All Users</a>
+      </div>
+    </div>
+    <br>
+    <span class="STLALogo">
+      <img src="../images/STLA World.png" alt="STLA World Logo" height="212" width="415" />
+    </span>
+
+  </header>
+
+  <main>
+    <article>
+      <h3>Log In</h3>
+
+      <form id="loginForm" action="../Login_SignUp/validate_login.php" method="post">
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Please enter a valid email address." required><br>
+
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"
+          pattern="(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one number, one special character, one uppercase and lowercase letter, and at least 8 or more characters"
+          required><br><br>
+
+          
+        <button type="submit">Login</button>
+      </form>
+      <p id="login">Don't have an account? <a href="../Login_SignUp/signup.html">Sign up</a></p>
+      <p id="forgetpass">Forgot your password? <a href="../Login_SignUp/reset.html">Reset Password</a></p>
+      <p id="delete">Do you want to delete your account? <a href="../Login_SignUp/delete.html">Delete Account</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <p>
+      The perfect website to book your tickets without waiting!
+      <br>
+      ________________________________________________________________
+      <br>
+      Copyright &copy;
+      <script>document.write(new Date().getFullYear());</script>, STLA WORLD.
+    </p>
+  </footer>
+
+</body>
+
+</html>

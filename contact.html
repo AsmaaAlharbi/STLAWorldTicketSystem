@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STLA World - ContactPage</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="projectscript.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="topnav">
+        <div class="MainPages">
+          <img src="images/miniLogo.png" height="45" width="120" class="miniSTLALogo" />
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a class="active" href="contact.html">Contact</a>
+          <a href="Offers.html">Offers</a>
+        </div>
+  
+        <div class="signup-login">
+          <a href="Login_SignUp/login.html">Log In</a>
+          <a href="Login_SignUp/signup.html">Sign Up</a>
+          <a href="show_users.php">All Users</a>
+        </div>
+      </div>
+      <br>
+      <span class="STLALogo">
+        <img src="images/STLA World.png" alt="STLA World Logo" height="212" width="415" />
+      </span>
+  
+    </header>
+
+    <main>
+      <article>
+        <h3>Reach Us</h3>
+        <div class="contactContainer">
+          <div class="founder-card">
+            <p>Contact With Us</p>
+            <br />
+            <br />
+            <div class="founder-info">
+              <div class="founder-name">Taif Almazmumi</div>
+              <div class="founder-linkedin">
+                <a href="https://www.linkedin.com/in/taif-almazmumi-b7449b270/"
+                  >View LinkedIn Profile</a
+                >
+                <a href="mailto:Talmazmumi0002@stu.kau.edu.sa">Email Us!</a>
+              </div>
+            </div>
+
+            <div class="founder-info">
+              <div class="founder-name">Asmaa Alharbi</div>
+              <div class="founder-linkedin">
+                <a href="https://www.linkedin.com/in/asmaa-alharbi-0b951720a"
+                  >View LinkedIn Profile</a
+                >
+                <a href="mailto:Aibrahimalharbi@stu.kau.edu.sa">Email Us!</a>
+              </div>
+            </div>
+
+            <div class="founder-info">
+              <div class="founder-name">Layan Alzahrani</div>
+              <div class="founder-linkedin">
+                <a href="https://www.linkedin.com/in/layan-alzahrani-764b96274"
+                  >View LinkedIn Profile</a
+                >
+                <a href="mailto:Lalzahrani0096@stu.kau.edu.sa">Email Us!</a>
+              </div>
+            </div>
+
+            <div class="founder-info">
+              <div class="founder-name">Mzoun Alqarni</div>
+              <div class="founder-linkedin">
+                <a
+                  href="https://www.linkedin.com/in/mzoun-alqarni-50a727215?trk=contact-info"
+                  >View LinkedIn Profile</a
+                >
+                <a href="mailto:Mabdulrahmanalqarni@stu.kau.edu.sa"
+                  >Email Us!</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--onsubmit Event-->
+          <form class="Form" onsubmit="confirmInput()">
+            <br />
+            <br />
+            <!--onmouseover and onmouseout Events-->
+            <p
+              onmouseover="style.color='#da8fa3'"
+              onmouseout="style.color='black'"
+            >
+              Send Your Request
+            </p>
+
+            <!--onfocus and onblur Events-->
+            <div class="display">
+              <label for="name">Name</label>
+            </div>
+            <div class="request">
+              <input
+                onfocus="focusFunction(this)"
+                onblur="blurFunction(this)"
+                type="text"
+                required
+                id="name"
+                name="name"
+                placeholder="Abdullah"
+              />
+            </div>
+
+            <!--onfocus and onblur Events-->
+            <div class="display">
+              <label for="Phone">Phone</label>
+            </div>
+            <div class="request">
+              <input
+                onfocus="focusFunction(this)"
+                onblur="blurFunction(this)"
+                type="tel"
+                required
+                id="phone"
+                name="phone"
+                placeholder="0555555555"
+              />
+            </div>
+
+            <!--onfocus and onblur Events-->
+            <div class="display">
+              <label for="Email">Email</label>
+            </div>
+            <div class="request">
+              <input
+                onfocus="focusFunction(this)"
+                onblur="blurFunction(this)"
+                type="email"
+                required
+                id="email"
+                name="email"
+                placeholder="StlaWorld@gmail.com"
+              />
+            </div>
+
+            <div class="display">
+              <label for="request">Type of Request</label>
+            </div>
+            <div class="inquiry">
+              <select id="request" name="request">
+                <option value="inquiry">Inquiry</option>
+                <option value="reportAProblem">Report a problem</option>
+              </select>
+            </div>
+
+            <div class="display">
+              <label for="message">Message</label>
+            </div>
+            <div class="Message">
+              <textarea
+                id="message"
+                required
+                name="message"
+                placeholder="Your Message..."
+              ></textarea>
+            </div>
+
+            <div class="Accept">
+              <input required type="radio" name="accept" value="accept" />
+              <label for="Accept" style="font-size: 15px"
+                >I accept the <a href="#">Terms of Service</a></label
+              >
+            </div>
+
+            <!--onclick event-->
+            <div class="Button">
+              <button onclick="confirmation()">Submit your request</button>
+            </div>
+          </form>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        The perfect website to book your tickets without waiting!
+        <br />
+        ________________________________________________________________
+        <br />
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        , STLA WORLD.
+      </p>
+    </footer>
+  </body>
+</html>

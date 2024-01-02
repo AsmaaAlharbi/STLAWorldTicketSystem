@@ -1,0 +1,489 @@
+body {
+  background-color: #EFEEEE;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.STLALogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+
+.card {
+  background-color: #eaeaea;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  flex-basis: calc(50% - 10px);
+  margin: 35px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  color: #000000;
+}
+
+
+container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.card ul {
+  list-style: none;
+  color: #9e4d63;
+  padding: 0;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+/*LogIn*/
+
+#loginForm,
+#signupForm,
+#resetForm {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-left: 34%;
+  margin-top: 30px;
+}
+
+#loginForm label,
+#signupForm label,
+#resetForm label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#loginForm input[type="email"],
+#loginForm input[type="password"],
+#signupForm input[type="email"],
+#signupForm input[type="password"],
+#resetForm input[type="email"],
+#resetForm input[type="password"],
+#signupForm input[type="text"],
+#signupForm input[type="tel"] {
+  width: 92%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#loginForm button,
+#signupForm button,
+#resetForm button {
+  width: 100%;
+  background-color: #da8fa3;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#loginForm button:hover,
+#signupForm button:hover,
+#resetForm input[type="submit"]:hover {
+  background-color: #bc7c8d;
+}
+
+#signup,
+#login,
+#forgetpass,
+#rememberpass,
+#delete {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#signup a,
+#login a,
+#forgetpass a,
+#rememberpass a,
+#delete a {
+  color: #bc7c8d;
+  text-decoration: none;
+}
+
+#signup a:hover,
+#login a:hover,
+#forgetpass a:hover,
+#rememberpass a:hover,
+#delete a:hover {
+  text-decoration: underline;
+}
+
+.topnav {
+  background-color: #ffffff;
+  display: flex;
+}
+
+.MainPages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin-left: 520px;
+}
+
+.signup-login {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px 20px;
+  margin-left: auto;
+}
+
+.signup-login a {
+  color: #000000;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav .MainPages a {
+  color: #000000;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.topnav a.active {
+  background-color: #da8fa3;
+  color: rgb(255, 255, 255);
+}
+
+.topnav .miniSTLALogo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: auto;
+  margin: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-bottom: 125px;
+  min-height: 85vh;
+}
+
+main {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+article {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+article h3 {
+  margin: 10px 0 25px 0;
+  font-size: 24px;
+  padding: 2px 35px;
+  text-align: center;
+}
+
+
+footer {
+  text-align: center;
+  background-color: white;
+  color: #bc7c8d;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 97%;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+  /* This will add space between the .Form and .founder-card */
+}
+
+.founder-card {
+  background-color: #eaeaea;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 35px;
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  order: 1;
+}
+
+
+.founder-info {
+  flex: 1;
+}
+
+.founder-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.founder-linkedin {
+  margin-top: 15px;
+}
+
+.founder-linkedin a {
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #da8fa3;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.founder-linkedin a:hover {
+  background-color: #bc7c8d;
+}
+
+
+.Form {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.Form div {
+  margin-top: 15px;
+  line-height: 15px;
+  font-size: 18px;
+  padding: 2px 50px;
+}
+
+.Form h2 {
+  margin-top: 15px;
+  line-height: 20px;
+  padding: 2px 50px;
+}
+
+.Form .request {
+  width: 400px;
+  height: 30px;
+  border-bottom: 2px solid #da8fa3;
+  margin: 10px 50px;
+  margin-bottom: 20px;
+}
+
+
+.Form .request input {
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  width: 496px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -50px;
+}
+
+.Form .Message textarea {
+  width: 500px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid #da8fa3;
+  border-radius: 5px;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Form .Button button {
+  height: 35px;
+  width: 300px;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #da8fa3;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.Form .Button button:hover {
+  background-color: #bc7c8d;
+}
+
+.Form .inquiry select {
+  width: 500px;
+  height: 30px;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  border: none;
+  background-color: #ededed;
+}
+
+.Form p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+
+}
+
+.founder-card p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+
+}
+
+.about p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+.about h3 {
+  font-size: 24px;
+  color: #bc7c8d;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.about h4 {
+  font-size: 20px;
+  color: #bc7c8d;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.about ul,
+ol {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.about li {
+  margin-bottom: 8px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+.book {
+  width: 330px;
+  height: 400px;
+  background-color: #f4f2f2;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  flex-basis: calc(50% - 10px);
+  margin: 30px;
+}
+
+.OfferTitle {
+  font-size: 25px;
+  color: #000000;
+  text-align: center;
+}
+
+
+.book img {
+  border-radius: 10px 10px 0 0;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.book ul {
+  list-style: none;
+  color: black;
+  padding: 0;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+.OffersPage .book .Button button {
+  height: 35px;
+  width: 200px;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #da8fa3;
+  border-radius: 5px;
+  border: none;
+}
+
+.OffersPage .book .Button button:hover {
+  background-color: #bc7c8d;
+}
+
+.OffersPage .book .Button {
+  text-align: center;
+}
+
+table {
+  width: 30%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-color: #bc7c8d;
+  margin-left: 35%;
+  font-size: 16px;
+}
+
+th {
+  border: 1px solid;
+  background-color: #f3f3f3;
+  text-align: left;
+  padding: 10px;
+  border-color: #bc7c8d;
+  text-align: center;
+}
+
+td {
+  border: 1px solid;
+  border-color: #bc7c8d;
+  padding: 10px;
+  text-align: center;
+}
